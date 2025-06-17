@@ -1,0 +1,22 @@
+[workspace]
+members = [
+    "BByte",
+    "BByte_client",
+    "BByte_client_loader",
+    "BByte_core",
+	"BByte_util",
+	"gui_client/BByte_ftp",
+    "gui_client/BByte_inject",
+    "gui_client/BByte_loader",
+    "gui_client/BByte_proxy"
+]
+
+[profile.release.package.BByte_client]
+strip = true 
+opt-level = "z"  
+codegen-units = 1
+
+[profile.release.package.BByte_client_loader]
+strip = true 
+opt-level = "z"  
+codegen-units = 1

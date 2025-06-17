@@ -1,0 +1,28 @@
+[package]
+name = "BByte"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+eframe = "0.19.0"
+egui_extras = {version = "0.19.0" , features = ["image"]}
+rand = "0.8"
+windows-icons = "0.1.1"
+image = { version = "0.24", features = ["jpeg", "png", "ico"] }
+BByte_util = {path = "../BByte_util"}
+BByte_core = {path = "../BByte_core"}
+lazy_static = "1.4.0"
+log = "0.4"
+simple_logger = { version = "2.3.0" , features = ["threads"]}
+rfd = "0.10.0"
+serde_json = "1.0"
+
+reqwest = { version = "0.11", features = ["blocking", "json"] }
+
+chrono = "0.4"
+
+tokio = { version = "1.43.0", features = ["full"] }
+getopts = "0.2"
+net2 = "0.2"
